@@ -24,7 +24,7 @@ function LandingNavBar() {
               navigate("/");
             }}
           >
-            AKJ Traders
+            AKJ Stores
 </div>
         <div>Admin</div>
         </div>
