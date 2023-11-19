@@ -45,7 +45,7 @@ useEffect(()=>{
         <div className="nav-left-main">
         <div className='nav-name-main'
             onClick={()=>{navigate("/main")}}>
-              Shine Traders
+             AKJ Stores
             </div>
           {/* onMouseOver={()=>setProduct(true)}
                      onClick={()=>setProduct(false)} */}
