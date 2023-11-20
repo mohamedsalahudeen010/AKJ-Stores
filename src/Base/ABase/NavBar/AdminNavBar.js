@@ -12,7 +12,7 @@ function AdminNavBar() {
   const {  setOpenCom, openLand, setOpenLand } =
     useContext(AkjContext);
   const [product, setProduct] = useState(false);
-  setProduct(false)
+  
   function logOutFunction(){
     localStorage.removeItem("name-admin");
     localStorage.removeItem("email-admin");
@@ -27,7 +27,7 @@ function AdminNavBar() {
         <div className="nav-left-main">
         <div className='nav-name-main'
             onClick={()=>{navigate("/adminPage")}}>
-              AKJ Stores
+              Shine Traders
             </div>
           {/* onMouseOver={()=>setProduct(true)}
                      onClick={()=>setProduct(false)} */}
@@ -49,7 +49,7 @@ function AdminNavBar() {
                         </li>
 
                      <li 
-                     onClick={()=>navigate.push("/adminProduct")}>
+                     onClick={()=>navigate("/adminProduct")}>
                         Products
                         </li>
                         
