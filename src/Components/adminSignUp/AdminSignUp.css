@@ -10,42 +10,41 @@ body {
     width: 100vw;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-left: -2rem;
+   
   }
   .signUp-admin-main {
-    padding-top: 8.5%;
-    margin-left: 50%;
+    padding-top: 5%;
+    
   }
   .name-title-signUp {
     width: 100%;
   }
   .title-signUp-admin {
-    color: rgb(35, 119, 48);
+    color: rgb(10, 10, 88);
     font-size: 2.5rem;
     font-weight: bolder;
     float: left;
-    margin-top: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 100%;
-    margin-left: -5rem;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .signup-title-2-admin {
-    font-size: 2rem;
-    color: rgb(10, 10, 88);
-    
-    margin: 0.5rem;
-    margin-top: -0.2rem;
+    font-size: 1.8rem;
+    color: rgb(12, 12, 12);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 100%;
-    float: left;
-  
     text-align: center;
-    margin-left: -5rem;
-  
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .form-signup-admin {
     align-items: center;
-    padding: 0.1rem 2rem;
-    width: 70%;
-    height: 10%;
+    padding: 0.5rem 3rem;
+    width: 80%;
+    min-height: 55vh;
+   margin-left:10% ;
   }
   
   form {
@@ -147,28 +146,29 @@ body {
   }
   .remember-signUp{
     width: 100%;
-  
     height: 2rem;
     margin-top: 24rem;
   }
   
   .foot-signUp{
     width: 100%;
-    text-align:justify;
+    text-align:center;
     font-size: 1.1rem;
-    font-weight: bold
+    font-weight: bold;
+
+  
   }
   
   
   @media screen and (max-width: 1200px) {
     .signUpPage {
-      padding-top: 7rem;
+      padding-top: 5.5rem;
       margin-top: -4rem;
-      margin-left: -2rem;
+      
     }
     .signUp-admin-main {
-      padding-top: 6%;
-      margin-left: 47%;
+      padding-top: 4%;
+      
     }
     .title-signUp-admin {
       font-size: 2.2rem;
@@ -180,9 +180,9 @@ body {
       margin-top: -0.2rem;
     }
     .form-signup-admin {
-      padding: 0.5rem 2rem;
+      padding: 0.1rem 2rem;
       width: 80%;
-  
+      margin-left: 10%;
     }
   
     form {
@@ -200,7 +200,7 @@ body {
     .input-signUp-admin {
       width: 100%;
       font-size: 15px;
-      padding: 2px 5px;
+      padding: 5px 5px;
       margin: 5px 0px 2px;
       height: 2.5rem;
     }
@@ -254,30 +254,30 @@ body {
   
   @media screen and (max-width: 1000px) {
     .signUpPage {
-      padding-top: 7rem;
+      padding-top: 5rem;
       margin-top: -4rem;
-      margin-left: -2rem;
+      
     }
     .signUp-admin-main {
       padding-top: 6%;
-      margin-left: 45%;
+    
     }
     .title-signUp-admin {
-      font-size: 2rem;
-      margin-left: -1rem;
+      font-size: 2.2rem;
+      
       margin-top: 1rem;
     }
     .signup-title-2-admin {
       font-size: 1.5rem;
-      margin-left: -0.6rem;
+      
   
       margin: 0.5rem;
       margin-top: -0.2rem;
     }
     .form-signup-admin {
       padding: 0.5rem 2rem;
-      width: 85%;
-  
+      width: 80%;
+      margin-left: 10%;
     }
   
     form {
@@ -306,7 +306,7 @@ body {
       font-size: 17px;
       border-radius: 7px;
       padding: 5px 6px;
-      margin-left: 1rem;
+      
     }
   
   
@@ -345,31 +345,37 @@ body {
   
   @media screen and (max-width: 850px) {
     .signUpPage {
-      padding-top: 10rem;
+      padding-top: 8rem;
       margin-top: -4rem;
-      margin-left: -2rem;
+      
     }
     .signUp-admin-main {
       padding-top: 6%;
-      margin-left: 42%;
+     
     }
     .title-signUp-admin {
-      font-size: 1.5rem;
-      margin-left: -3rem;
+      font-size: 2rem;
+     
       margin-top: 1rem;
     
     }
     .signup-title-2-admin {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       
   
       margin: 0.5rem;
-      margin-left: -4rem;
+     
   
     }
     .form-signup-admin {
-      padding: 0.5rem 2rem;
-      width: 85%;
+      padding: 1rem 2rem;
+      width: 80%;
+      margin-left: 10%;
+      
+    }
+    .form-signup-admin >*{
+      padding: 0.2rem 0rem;
+      
       
     }
   
@@ -446,16 +452,16 @@ body {
   
   @media screen and (max-width: 650px) {
     .signUpPage {
-      padding-top: 11rem;
+      padding-top: 9rem;
       margin-top: -4rem;
-      margin-left: -2rem;
+    
     }
     .signUp-admin-main {
       padding-top: 6%;
-      margin-left: 42%;
+    
     }
     .title-signUp-admin {
-      font-size: 1.1rem;
+      font-size: 2rem;
       margin-left: 0.5rem;
       margin-top: 1rem;
     }
@@ -468,8 +474,8 @@ body {
     }
     .form-signup-admin {
       padding: 0.5rem 2rem;
-      width: 100%;
-      height: 50%;
+      width: 80%;
+      margin-left: 10%;
     }
   
     form {
