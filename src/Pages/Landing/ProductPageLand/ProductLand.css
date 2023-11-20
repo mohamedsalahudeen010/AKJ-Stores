@@ -14,11 +14,10 @@
 
 .card-land{
     background-color: rgba(54, 193, 101, 0.636);
-    background-image: linear-gradient(135deg,rgb(203, 204, 208),rgb(220, 216, 216),rgb(132, 140, 132));
-    width: 18%;
+    background-image: linear-gradient(135deg,rgb(203, 204, 208),rgb(255, 255, 255),rgb(212, 218, 212));
+   
     height: 30%;
-    margin: 3rem;
+    margin: 0.1rem;
     padding: auto;
-    padding-left: 2rem;
-    border-radius: 2rem;
+    border-radius: 0.2rem;
 }
