@@ -11,36 +11,36 @@
   .loginPage{
     margin: 0%;
     padding: 0%;
-    margin-top: -2rem;
-    margin-left: -2rem;
     min-height: 100vh;
     width: 100vw;
-    
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    left: -2;
     top: 0;
    
    
 }
 .login-main{
-padding-top: 14%;
-margin-left: 32%;
+padding-top: 7%;
 min-height: 50vh;
 }
 
   .title-login-user{
-    color: rgb(35, 119, 48);
+    color: rgb(35, 36, 119);
+   
     font-size: 3rem;
     font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .form-signIn {
       align-items: center;
       margin: auto;
-      padding: 1rem 2rem ;
-      width:60%;
+      padding: 0.5rem 2rem ;
+      width:80%;
       height: 60%;
-      border-radius: 10px;    
+      border-radius: 10px;  
+    }
+    .form-signIn>*{
+      padding-top: 1rem;
     }
   .signIn-title{
     font-size: 2rem;
@@ -48,6 +48,7 @@ min-height: 50vh;
     margin-top: -0.1rem;
     color: black;
     font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   form{
       padding: 5px;
@@ -62,13 +63,13 @@ min-height: 50vh;
      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   .textlabel-signIn{
-      display: block;
-      font-size: 1.2rem;
-      text-align: left;
-      font-weight: bolder;
-      margin-top: 1rem;
-      margin-left: 2.4rem;
-      color: rgb(7, 7, 108);
+    display: block;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: bolder;
+    margin-top: 1rem;
+    margin-left: 2.4rem;
+    color: rgb(7, 7, 108);
   }
   .input-login-user{
       width:80% ;
@@ -125,11 +126,11 @@ min-height: 50vh;
     .signIn-title{
       font-size: 1.5rem;
       margin: 1rem;
-      margin-top: -0.1rem;
+    
       
     }
       .form-signIn {
-        width:70%;
+        
         height: 65%;
         
       }
@@ -142,7 +143,7 @@ min-height: 50vh;
           font-size: 1.2rem;
           
           margin-top: 1rem;
-          margin-left: 2.4rem;
+         
          
       }
       .input-login-user{
@@ -166,7 +167,6 @@ min-height: 50vh;
     
       font-size: 18px;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      margin-left: 1rem;
       padding: 0.4rem 2.6rem;
   }
   }
@@ -175,8 +175,7 @@ min-height: 50vh;
   @media screen and (max-width: 850px) {
     
     .login-main{
-      padding-top: 18%;
-      margin-left: 32%;
+      padding-top: 10%;
       min-height: 50vh;
       }
     .title-login-user{
@@ -193,7 +192,6 @@ min-height: 50vh;
       .form-signIn {
         width:80%;
         height: 75%;
-        margin-left: 6rem;
       }
      
         .forget-password-login-user{
@@ -204,7 +202,6 @@ min-height: 50vh;
           font-size: 1.2rem;
           
           margin-top: 1rem;
-          margin-left: 2.4rem;
          
       }
       .input-login-user{
@@ -221,14 +218,13 @@ min-height: 50vh;
      
         font-size: 15px;
        
-        margin-left: 1rem;
+
         padding: 0.3rem 2.5rem;
     }
     .login-btn-land:hover{
     
       font-size: 15px;
-    
-      margin-left: 1rem;
+
       padding: 0.4rem 2.6rem;
   }
   }
@@ -239,7 +235,7 @@ min-height: 50vh;
     .title-login-user{
      
       font-size: 1.5rem;
-      margin-top: 4.5rem;
+      margin-top: 3rem;
     }
     .signIn-title{
       font-size: 1.2rem;
@@ -248,9 +244,9 @@ min-height: 50vh;
       
     }
       .form-signIn {
-        width:85%;
+
         height: 65%;
-        margin-left: 3.5rem;
+
       }
      
         .forget-password-login-user{
@@ -277,15 +273,13 @@ min-height: 50vh;
       
      
         font-size: 15px;
-       
-        margin-left: 1rem;
+
         padding: 0.3rem 2.2rem;
     }
     .login-btn-land:hover{
     
       font-size: 15px;
-    
-      margin-left: 1rem;
+  
       padding: 0.4rem 2.3rem;
   }
   }
@@ -296,25 +290,25 @@ min-height: 50vh;
     .title-login-user{
       color: rgb(35, 119, 48);
       font-size: 1.5rem;
-      margin-top:8rem;
-      width: 110%;
-      margin-left: -2rem;
+      margin-top:4rem;
+   
+      
     }
     .signIn-title{
       font-size: 1.2rem;
-      margin: 1rem;
-      margin-top: -0.5rem;
+      margin-top: 1rem;
+     
       
     }
       .form-signIn {
-        width:90%;
+        width:80%;
         height: 65%;
-        margin-left: 3rem;
+        
       }
      
         .forget-password-login-user{
           margin: 1.5rem;
-          font-size: 0.5rem;
+          font-size: 1rem;
           font-weight: bolder;
         }
         .textlabel-signIn{
@@ -322,7 +316,7 @@ min-height: 50vh;
           font-size: 1.2rem;
           
           margin-top: 1rem;
-          margin-left: 2.4rem;
+      
          
       }
       .input-login-user{
@@ -339,7 +333,7 @@ min-height: 50vh;
         color: rgb(255, 255, 254);
         font-size: 13px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin-left: -1rem;
+      
         padding: 0.3rem 1rem;
     }
     .textlabel-signIn{
@@ -358,35 +352,31 @@ min-height: 50vh;
     
     .title-login-user{
       color: rgb(35, 119, 48);
-      font-size: 1.2rem;
-      margin-top:10rem;
-      width: 120%;
-      margin-left: -2.6rem;
+      font-size: 1.5rem;
+      margin-top:5rem;
+     
     }
     .signIn-title{
-      font-size: 1rem;
-      margin: 1rem;
-      margin-top: -0.5rem;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+  
       
     }
       .form-signIn {
-        width:100%;
-        height: 90%;
-        margin-left: 1.5rem;
+    
+      
       }
      
         .forget-password-login-user{
-          margin: 1.5rem;
+          margin-top: 1.5rem;
           font-size: 0.7rem;
           font-weight: bolder;
-          margin-left: -2.5rem;
+      
           
         }
         .textlabel-signIn{
          
           font-size: 1.2rem;
-          
-          margin-top: 1rem;
           margin-left: 0;
          
       }
@@ -404,7 +394,7 @@ min-height: 50vh;
         color: rgb(255, 255, 254);
         font-size: 11px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin-left: -1rem;
+
         padding: 0.3rem 1rem;
     }
     .textlabel-signIn{
@@ -412,7 +402,7 @@ min-height: 50vh;
       font-size: 1.2rem;
       text-align: left;
       font-weight: bolder;
-      margin-top: 1rem;
+   
      
       color: rgb(7, 7, 108);
   }
@@ -433,7 +423,7 @@ min-height: 50vh;
       
     }
       .form-signIn {
-        width:85%;
+       
         height: 65%;
         
       }
@@ -446,7 +436,7 @@ min-height: 50vh;
           font-size: 1.2rem;
           
           margin-top: 1rem;
-          margin-left: 2.4rem;
+
          
       }
       .input-login-user{
@@ -463,7 +453,7 @@ min-height: 50vh;
         color: rgb(255, 255, 254);
         font-size: 15px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin-left: -5rem;
+  
         padding: 0.3rem 1rem;
     }
     .textlabel-signIn{
