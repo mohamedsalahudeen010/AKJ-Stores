@@ -91,7 +91,7 @@ const LogInPage = () => {
        
         <div>
           <h3 className="title-login-user">
-          Shine Traders Welcomes You
+          AKJ Stores Welcomes You
            
           </h3>
         </div>
@@ -102,7 +102,7 @@ const LogInPage = () => {
         <div>
         <h2 className="signIn-title">LogIn As Family</h2>
           <form onSubmit={handleSubmit} className="form-signIn">
-          <div><span>UserId : user123@gmail.com</span> || 
+          <div className="credentials"><span>UserId : user123@gmail.com</span> || 
             
             <span>password : user12345</span></div>
 
