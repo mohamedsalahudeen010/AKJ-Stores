@@ -11,6 +11,7 @@ import { AkjContext } from '../../../Context';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchOrders } from '../../../Redux/orders/ordersAction';
 import { useNavigate } from 'react-router-dom';
+import { fetchUsers } from '../../../Redux/users/usersAction';
 
 
 function MainNavBar() {
@@ -22,8 +23,12 @@ function MainNavBar() {
    const [product,setProduct]=useState(false)
    
    const userEmail=localStorage.getItem("email")
+   let userName=localStorage.getItem("name")
 useEffect(()=>{
+  
   dispatch(fetchOrders(userEmail))
+   dispatch(fetchUsers(userEmail))
+   console.log(userEmail)
 },[])
    const cart=useSelector((prod)=>prod.cartItems.cart);
  console.log(cart)
@@ -45,14 +50,14 @@ useEffect(()=>{
         <div className="nav-left-main">
         <div className='nav-name-main'
             onClick={()=>{navigate("/main")}}>
-             AKJ Stores
+              AKJ Stores
             </div>
           {/* onMouseOver={()=>setProduct(true)}
                      onClick={()=>setProduct(false)} */}
             <div className='user-name-main'
             >
               
-                        Hello! {localStorage.getItem("name")} 
+                        Hello! {userName} 
                         
             </div>          
         </div>
