@@ -10,7 +10,7 @@ import Card from "react-bootstrap/Card";
 import "./ProdCardLand.css"
 
 
-const ProductCardLand = ( product ) => {
+const ProductCardLand = ( {product} ) => {
   // const history = useHistory();
   const [varient, setVarient] = useState(1);
   
@@ -33,15 +33,17 @@ const ProductCardLand = ( product ) => {
   //   );
   // };
 
+  console.log(product.name)
+  console.log(product)
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleCloseCart = () => setCartAlert(false);
-  // const handleShowCart = () => setCartAlert(true);
+  const handleShowCart = () => setCartAlert(true);
   return (
-    <div className="row prod-card-land-main">
-      <Card className="prod-card-land">
+    < >
+      <Card className="prod-card-land-main">
         <Card.Title
         className="prod-card-name-land">{product.name}</Card.Title>
         <Card.Img
@@ -59,10 +61,10 @@ const ProductCardLand = ( product ) => {
             </div>
           </div>
           <div className="flex-container">
-            <div className="w-100 m-1 prod-varient-land">
+            <div className="w-100 prod-varient-land m-1">
               Varients
               <select
-                className="form-control m-1"
+                className="form-control"
                 value={varient}
                 onChange={(e) => {
                   setVarient(e.target.value);
@@ -75,10 +77,10 @@ const ProductCardLand = ( product ) => {
                 ))}
               </select>
             </div>
-            <div className="w-100 m-1">
+            <div className="w-100 prod-Quantity-land m-1">
               Quantity
               <select
-                className="prod-Quantity-land form-control m-1"
+                className=" form-control "
                 value={quantity}
                 onChange={(e) => {
                   setQuantity(e.target.value);
@@ -96,7 +98,7 @@ const ProductCardLand = ( product ) => {
          
           {/* <<<<<<<<<<<<<<<<<<<PRICE>>>>>>>>>>>>>>>>> */}
           <div className="flex-container">
-            <div className="w-100">
+            <div className="w-100 m-1">
               <h5 className="prod-price-land">
                 Price :{" "}
                 {varient *
@@ -157,7 +159,7 @@ const ProductCardLand = ( product ) => {
           </Modal.Footer>
         </Modal>
       </div>
-    </div>
+    </>
   );
 };
 
