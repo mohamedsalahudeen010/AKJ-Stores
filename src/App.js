@@ -48,13 +48,12 @@ function App() {
       dispatch(fetchAllOrders())
     }
     else if(localStorage.getItem("email")){
-      dispatch(fetchProducts()) 
       dispatch(fetchOrders(localStorage.getItem("email")))
       dispatch(fetchCart(localStorage.getItem("email")))
       dispatch(fetchUsers(localStorage.getItem("email")))
       console.log(localStorage.getItem(localStorage.getItem("email")))
     }
-  
+    dispatch(fetchProducts()) 
   },[])
 
   const { openCom, setOpenCom, openLand, setOpenLand } =
