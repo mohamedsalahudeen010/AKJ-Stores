@@ -1,6 +1,6 @@
 import {  Route, Routes } from 'react-router-dom';
 import './App.css';
-import {  useEffect } from 'react';
+import {  useContext, useEffect } from 'react';
 import { fetchProducts } from './Redux/Products/productsAction';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 
 
 import { fetchCart } from './Redux/Cart/cartAction';
-import { ShineContext } from './Context';
+
 
 import { fetchStock } from './Redux/Stock/stockAction';
 import { fetchAllOrders, fetchOrders} from './Redux/orders/ordersAction';
@@ -29,6 +29,11 @@ import OrdersPage from './Pages/Admin/OrdersPage/OrdersPage';
 import StockPage from './Pages/Admin/StockPage/StockPage';
 import AddProducts from './Pages/Admin/StockPage/AddProducts/AddProducts';
 import UpdateProducts from './Pages/Admin/StockPage/UpdateProducts/UpdateProducts';
+import { AkjContext } from './Context';
+import { fetchUsers } from './Redux/users/usersAction';
+
+import ForgetPageUser from './Components/userForgetPage/ForgetPageUser';
+import ForgetPageAdmin from './Components/adminForgetPage/ForgetPageAdmin';
 
 
 
@@ -46,13 +51,14 @@ function App() {
       dispatch(fetchProducts()) 
       dispatch(fetchOrders(localStorage.getItem("email")))
       dispatch(fetchCart(localStorage.getItem("email")))
-      console.log(localStorage.getItem("email"))
+      dispatch(fetchUsers(localStorage.getItem("email")))
+      console.log(localStorage.getItem(localStorage.getItem("email")))
     }
   
   },[])
 
-  // const { openCom, setOpenCom, openLand, setOpenLand } =
-  //   useContext(ShineContext);
+  const { openCom, setOpenCom, openLand, setOpenLand } =
+    useContext(AkjContext);
   return (
     <div className="App">
      
@@ -64,9 +70,13 @@ function App() {
           
         <Route path="/signUp" element={<SignUpPage/>}/>
 
+        <Route path="/forgetPageUser" element={<ForgetPageUser/>}/>
+
         <Route path="/adminLogin" element={<AdminLogInPage/>}/>
           
         <Route path="/adminSignUp" element={<AdminSignUpPage/>}/>
+
+        <Route path="/forgetPageAdmin" element={<ForgetPageAdmin/>}/>
       
         <Route path="/productsLand" element={<ProductLand/>}/>
 
