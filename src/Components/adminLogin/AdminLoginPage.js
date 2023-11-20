@@ -152,7 +152,7 @@ const AdminLogInPage = () => {
                
             <p
             className="forget-password-login-Admin"
-            onClick={() => navigate("/forgetPassword/-Admin")}
+            onClick={() => navigate("/forgetPasswordAdmin")}
             
           >
             Forget Password
