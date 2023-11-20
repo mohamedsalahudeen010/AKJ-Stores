@@ -20,23 +20,17 @@ export const fetchUsersFailure=(error)=>{
     }
 }
 
-export const fetchUsers=(user)=>{
+export const fetchUsers=(email)=>{
     return async (dispatch)=>{
-        console.log(user)
         dispatch(fetchUsersRequest())
         try {
-            const response=await fetch(`${baseURL}/userLogin/one`,{
-                method:"POST",
-                body: JSON.stringify(user),
-                headers: {
-                    "Content-Type": "application/json",
-                  },
+            const response=await fetch(`${baseURL}/userLogin/one?email=${email}`,{
+                method:"GET"
             })
             const data=await response.json()
-            console.log(data)
             dispatch(fetchUserSuccess(data))
         } catch (error) {
-            console.log(error)
+            console.log(error);
             dispatch(fetchUsersFailure(error.message))
         }
     }
