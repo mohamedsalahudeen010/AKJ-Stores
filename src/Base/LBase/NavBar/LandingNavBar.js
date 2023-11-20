@@ -25,8 +25,13 @@ function LandingNavBar() {
             }}
           >
             AKJ Stores
-</div>
-        <div>Admin</div>
+            </div>
+
+        <ul>
+        <li className="nav-left-admin"
+        onClick={()=>navigate("/adminLogin")}>Admin</li>
+        </ul>
+
         </div>
         <div className="nav-right-land">
           <div className="nav-right-land-list">
