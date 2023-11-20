@@ -164,7 +164,7 @@ const LogInPage = () => {
                
             <p
             className="forget-password-login-user"
-            onClick={() => navigate("/forgetPassword/user")}
+            onClick={() => navigate("/forgetPageUser")}
             
           >
             Forget Password
