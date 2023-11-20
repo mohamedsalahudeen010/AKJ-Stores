@@ -140,7 +140,7 @@ export const fetchCart=(email)=>{
                  }
             })
             const data=await response.json()
-            console.log(data)
+            console.log("CARTTTTTT:",data)
             dispatch(fetchCartSuccess(data))
           
         } 
