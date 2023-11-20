@@ -6,6 +6,7 @@ import ProductCardLand from './card/ProdCardLand'
 
 import LandingBase from '../../../Base/LBase/LandingBase'
 import { fetchProducts } from '../../../Redux/Products/productsAction'
+import SideBar from '../../../Components/SideBar/SideBar'
 
 
 
@@ -23,11 +24,16 @@ function ProductLand() {
 
   return (
 <LandingBase>
-      <div className="row justify-content-center productPage-land">
+
+  <div className=' productPage-land'>
+    
+    <div className='row sideBar-land'>
+      <SideBar/>
+    </div>
+    
+      <div className="row justify-content-center b ">
      
-              
-              
-              
+ 
             
         {product &&
           product.map((prod) => (
@@ -36,12 +42,11 @@ function ProductLand() {
               
               </div>
           ))}
-          
-      </div>
-      
+          </div>
+     
       
 
-     
+      </div>
     </LandingBase>
   )
 }
