@@ -6,41 +6,50 @@ body {
 .signUpPage {
   padding-top: 4.5rem;
   min-height: 110vh;
-  margin-top: -4rem;
-  width: 100vw;
-  
+ 
+  width: 100vw;  
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-left: -2rem;
+
+}
+.signUpPage {
+  padding-top: 4.5rem;
+  min-height: 110vh;
+  margin-top: 2rem;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ 
 }
 .signUp-user-main {
-  padding-top: 7%;
-  margin-left: 50%;
+  padding-top: 5%;
+ 
 }
 .name-title-signUp {
   width: 100%;
 }
 .title-signUp-user {
-  color: rgb(35, 119, 48);
+  color: rgb(10, 10, 88);
   font-size: 2.5rem;
   font-weight: bolder;
-  float: left;
   margin-top: 0.4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .signup-title-2-user {
   font-size: 2rem;
-  color: rgb(10, 10, 88);
-  float: left;
+  color: black;
   margin: 0.5rem;
-  margin-top: -0.2rem;
-}
-.form-signup-user {
-  align-items: center;
-  padding: 0.1rem 2rem;
-  width: 70%;
-  height: 10%;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.form-signup-user {
+  align-items: center;
+  padding: 0.5rem 3rem;
+  width: 70%;
+  min-height: 55vh;
+ margin-left:15% ;
+}
 form {
   padding: 2px 5px;
 }
@@ -71,6 +80,7 @@ h1 {
   margin: 5px 0px 2px;
   height: 3rem;
 }
+
 input:focus {
   background-color: rgb(184, 225, 197);
 }
@@ -99,7 +109,7 @@ input:focus {
 }
 .input2 {
   
-  width: 48%;
+  width: 10%;
   float: right;
 }
 .input1 {
@@ -155,12 +165,11 @@ font-size: 1rem;
 @media screen and (max-width: 1200px) {
   .signUpPage {
     padding-top: 7rem;
-    margin-top: -4rem;
-    margin-left: -2rem;
+ 
   }
   .signUp-user-main {
     padding-top: 6%;
-    margin-left: 47%;
+ 
   }
   .title-signUp-user {
     font-size: 2.2rem;
@@ -168,8 +177,6 @@ font-size: 1rem;
   .signup-title-2-user {
     font-size: 1.7rem;
 
-    margin: 0.5rem;
-    margin-top: -0.2rem;
   }
   .form-signup-user {
     padding: 0.5rem 2rem;
@@ -248,28 +255,21 @@ font-size: 1rem;
   .signUpPage {
     padding-top: 7rem;
     margin-top: -4rem;
-    margin-left: -2rem;
   }
   .signUp-user-main {
     padding-top: 6%;
-    margin-left: 45%;
   }
   .title-signUp-user {
     font-size: 2rem;
-    margin-left: -1rem;
     margin-top: 1rem;
   }
   .signup-title-2-user {
     font-size: 1.5rem;
-    margin-left: -0.6rem;
-
-    margin: 0.5rem;
-    margin-top: -0.2rem;
   }
   .form-signup-user {
     padding: 0.5rem 2rem;
-    width: 85%;
-
+    width: 80%;
+margin-left: 10%;
   }
 
   form {
@@ -339,29 +339,28 @@ font-size: 1rem;
   .signUpPage {
     padding-top: 9rem;
     margin-top: -4rem;
-    margin-left: -2rem;
+
   }
   .signUp-user-main {
-    padding-top: 6%;
-    margin-left: 42%;
+    padding-top: 4%;
   }
   .title-signUp-user {
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-left: 2rem;
     margin-top: 1rem;
   }
   .signup-title-2-user {
-    font-size: 1rem;
+    font-size: 1.2rem;
     
 
     margin: 0.5rem;
-    margin-left: 2rem;
+
 
   }
   .form-signup-user {
     padding: 0.5rem 2rem;
-    width: 85%;
-    
+    width: 80%;
+    margin-left: 10%;
   }
 
   form {
@@ -439,26 +438,26 @@ font-size: 1rem;
   .signUpPage {
     padding-top: 9rem;
     margin-top: -4rem;
-    margin-left: -2rem;
+ 
   }
   .signUp-user-main {
     padding-top: 6%;
-    margin-left: 42%;
+
   }
   .title-signUp-user {
-    font-size: 1.1rem;
-    margin-left: 2rem;
+    font-size: 1.9rem;
+  
     margin-top: 1rem;
   }
   .signup-title-2-user {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     margin: 0.5rem;
-    margin-left: 2rem;
+ 
 
   }
   .form-signup-user {
     padding: 0.5rem 2rem;
-    width: 100%;
+    width: 80%;
     height: 50%;
   }
 
@@ -534,33 +533,32 @@ font-size: 1rem;
 
 @media screen and (max-width: 500px) {
   .signUpPage {
-    padding-top: 9rem;
+    padding-top: 5rem;
     margin-top: -4rem;
-    margin-left: -2rem;
+
   }
   .signUp-user-main {
-    padding-top: 15%;
-    margin-left: 42%;
+    padding-top: 6%;
+
   }
   .title-signUp-user {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     
     margin-top: 1rem;
-    width: 120%;
-    margin-left: -3rem;
+
+
   }
   .signup-title-2-user {
-    font-size: 0.8rem;
+    font-size: 1rem;
     
     margin: 0.5rem;
-    margin-left: -2rem;
-    width: 110%;
+  
+    width: 100%;
   }
   .form-signup-user {
     padding: 0.2rem 0;
-    width: 100%;
-    height: 60%;
-    margin-top: 5rem;
+    height: 80%;
+
   }
 
 
@@ -575,9 +573,9 @@ font-size: 1rem;
   .input-signUp-user {
     width: 100%;
     font-size: 15px;
-    padding: 2px 5px;
+    padding: 5px 5px;
     margin: 5px 0px 2px;
-    height: 2rem;
+    height: 2.5rem;
   }
 
 
@@ -631,22 +629,32 @@ font-size: 1rem;
 
 @media screen and (max-width: 450px) {
   .signUpPage {
-    padding-top: 10rem;
+    padding-top: 2rem;
     margin-top: -4rem;
-    margin-left: -2rem;
     min-height: 80vh;
   }
+  .title-signUp-user {
+    font-size: 1.5rem;
 
+    margin-top: 0rem;
+
+  }
+  .signup-title-2-user {
+    font-size: 1rem;
+    margin: 1rem;
+  }
   .signUp-user-main {
-    padding-top: 30%;
-    margin-left: 42%;
+    
   }
   .form-signup-user {
     padding: 0.2rem 0;
-    width: 100%;
-    height: 120%;
-    margin-top: 5rem;
+    margin-top: 2rem;
  
+  }
+
+  .input-signUp-user {
+    
+    height: 2.5rem;
   }
 
 }
@@ -654,29 +662,26 @@ font-size: 1rem;
   .signUpPage {
     padding-top: 10rem;
     margin-top: -4rem;
-    margin-left: -2rem;
+
   }
   .signUp-user-main {
-    padding-top: 15%;
-    margin-left: 42%;
+    padding-top: 2%;
+
   }
   .title-signUp-user {
-    font-size: 1rem;
-    margin-left: -4rem;
-    margin-top: 1.5rem;
-    width: 150%;
+    font-size: 1.5rem;
+
+    margin-top: 0rem;
+
   }
   .signup-title-2-user {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 1rem;
-    margin-left: -3rem;
-    width: 130%;
-
-
   }
   .form-signup-user {
     padding: 0.2rem 0;
-    width: 100%;
+    margin-left: 10%;
+    width: 80%;
     height: 50%;
   }
 
@@ -748,4 +753,9 @@ font-size: 1rem;
       font-size: 0.6rem;
     margin-left: -2rem;
     }
+    .input-signUp-user {
+    
+      height: 2.5rem;
+    }
+  
 }
