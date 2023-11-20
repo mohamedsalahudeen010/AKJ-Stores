@@ -155,7 +155,7 @@ export const fetchAllOrders=()=>{
         dispatch(fetchOrderRequest())
         
         try {
-            const response=await fetch(`${baseURL}/orders/admin`,{
+            const response=await fetch(`${baseURL}/order/admin`,{
                 method:"GET",
                 headers:{
                     "Content-Type":"application/json",
