@@ -5,7 +5,8 @@ import MainBase from '../../../Base/MBase/MainBase'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { fetchProducts } from '../../../Redux/Products/productsAction'
-import ProductCardLand from '../../Landing/ProductPageLand/card/ProdCardLand'
+
+import ProductCardMain from './Card/prodCardMain'
 
 function ProductsPageMain() {
   const dispatch=useDispatch()
@@ -30,7 +31,7 @@ function ProductsPageMain() {
               key={prod._id}
               
             >
-              <ProductCardLand product={prod} />
+              <ProductCardMain product={prod} />
               
             </div>
            
