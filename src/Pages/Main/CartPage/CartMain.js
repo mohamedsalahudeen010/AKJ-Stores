@@ -1,4 +1,4 @@
-import  { React, useEffect, useState } from "react";
+import  { React, useCallback, useEffect, useState } from "react";
 //useCallback,
 import { useSelector, useDispatch } from "react-redux";
 import "./Cart.css"
@@ -7,9 +7,9 @@ import Minus from "@iconscout/react-unicons/icons/uil-minus-circle"
 import Trash from "@iconscout/react-unicons/icons/uil-trash-alt"
 
 
-import {  addOneToCart, addToCart, deleteOneItemCart, deleteWholeCart } from "../../../Redux/Cart/cartAction";
+import {  addOneToCart, addToCart, deleteOneItemCart, deleteWholeCart, fetchCart } from "../../../Redux/Cart/cartAction";
 
-import MainBase from "../../../Base/ABase/AdminBase";
+import MainBase from "../../../Base/MBase/MainBase";
 import { fetchAddOrder } from "../../../Redux/orders/ordersAction";
 import { useNavigate } from "react-router-dom";
 
@@ -21,22 +21,24 @@ function CartPage() {
 
   let cartData=localStorage.getItem(`cartItems`)
   const[cart,setCart]=useState([])
+  const dispatch = useDispatch();
   // const[paymentSuccess,setPaymentSuccess]=useState(false)
 
-
+const email=localStorage.getItem("email")
   useEffect(()=>{
-   
-  },[cart])
+   dispatch(fetchCart(email))
+  },[])
 
 
-  // const deleteCart=useCallback((idx)=>{
-  //   localStorage.removeItem(`cartItems`)
-  //   setCart( localStorage.removeItem(`cartItems`))
-  //   console.log(cart)
-  //   console.log(`cartItems[${idx}]`)
-  //   history.push("/main")
+  const deleteCart=useCallback((idx)=>{
+
+    localStorage.removeItem(`cartItems`)
+    setCart( localStorage.removeItem(`cartItems`))
+    console.log(cart)
+    console.log(`cartItems[${idx}]`)
+    history.push("/main")
     
-  // },[cart])
+  },[cart])
 
 
 
@@ -48,8 +50,8 @@ function CartPage() {
 
   const cartCard = useSelector((state) => state.cartItems.cart);
   const cartItems = cartCard;
-  setCart(cartItems)
-  const dispatch = useDispatch();
+  
+  
   
 console.log("cartItems",cartItems)
   let totalAmount = cartItems.reduce((x, item) => x + item.totalPrice, 0);
