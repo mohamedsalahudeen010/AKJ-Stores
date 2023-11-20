@@ -92,7 +92,7 @@ const AdminSignUpPage = () => {
  <div className="signUp-admin-main">
         <div className="name-title-signUp">
           <h3 className="title-signUp-admin">
-          Shine Traders Welcomes You
+          AKJ Stores Welcomes You
            
           </h3>
         </div>
