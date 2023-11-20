@@ -6,16 +6,16 @@
     height:10vh;
     display: flex;
     justify-content: space-between;
-    color: rgb(25, 51, 9);
+    color: rgb(218, 223, 215);
     position:fixed;
-    top: 8vh;
+    top: 0.5vh;
     left: 0;
-    width: 96vw;
+    width: 99.5vw;
     z-index:2;
-    background-color: rgba(252, 252, 252, 0.934);
-    margin-left:1vw;
-    border-radius: 0.5rem;
+    background-color: rgba(24, 173, 66, 0.934);
+    border-radius: 0.1rem;
     border: 0.5px solid grey;
+    margin-left: 0.25vw;
     
 }
 
@@ -32,16 +32,22 @@
     font-weight: bold;
     padding-left: 1rem;
     cursor: pointer;
-    color: rgb(80, 181, 22);
+    color: rgb(17, 18, 16);
+}
+.nav-name-main:hover{
+    font-size: 1.7rem;
+    color: rgb(219, 222, 217);
 }
 .user-name-main{
     font-size: 1rem;
     font-weight: bold;
     padding-left: 1rem;
     cursor: pointer;
-    color: rgb(80, 181, 22);
+    color: rgb(20, 21, 20);
 }
-
+.user-name-main:hover{
+    color: rgb(224, 233, 224);
+}
 .nav-right-main{
     display: flex;
     align-items: center;
@@ -69,13 +75,10 @@
 }
 .nav-right-main-list>ul>li:hover{
 cursor: pointer;
-color: rgb(185, 96, 41);
+color: rgb(238, 234, 232);
 font-size:1.2rem;
 }
-.nav-name-main:hover{
-    font-size: 1.7rem;
-    color: rgb(80, 181, 22);
-}
+
 .nav-btn{
     flex: 1;
     margin-right: 2rem;
