@@ -19,21 +19,24 @@ function ProductLand() {
    },[])
    
   const product=useSelector((prod)=>prod.products.products)
-  console.log(product)
+  console.log( "product Land : ",  product)
+
   return (
 <LandingBase>
       <div className="row justify-content-center productPage-land">
+     
+              
+              
+              
+            
         {product &&
           product.map((prod) => (
-            <div
-              className="col-md-3 card-land"
-              key={prod._id}
-              
-            >
+            <div className="col-xl-2 col-md-3 col-sm-4 col-xs-5 card-land" key={prod._id}>
               <ProductCardLand product={prod} />
               
-            </div>
+              </div>
           ))}
+          
       </div>
       
       
