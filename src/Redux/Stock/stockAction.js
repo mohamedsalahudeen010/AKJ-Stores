@@ -70,7 +70,7 @@ export const fetchAddToStock=(product)=>{
         dispatch(addToStock(product))
         
         try {
-            const response=await fetch(`https://shine-traders-back-end.vercel.app/products/admin`,{
+            const response=await fetch(`${baseURL}/products/admin`,{
                 method:"POST",
                 body:JSON.stringify(product),
                 headers:{
@@ -99,7 +99,7 @@ export const updateStock=(product)=>{
         dispatch(addToStock(product))
         
         try {
-            const response=await fetch(`https://shine-traders-back-end.vercel.app/products/admin/${id}`,{
+            const response=await fetch(`${baseURL}/products/admin/${id}`,{
                 method:"PUT",
                 body:JSON.stringify(product),
                 headers:{
@@ -124,7 +124,7 @@ export const fetchStock=()=>{
         dispatch(fetchStockRequest())
         
         try {
-            const response=await fetch(`https://shine-traders-back-end.vercel.app/products/admin`,{
+            const response=await fetch(`${baseURL}/products/admin`,{
                 method:"GET",
                 headers:{
                     "Content-Type":"application/json",
@@ -151,7 +151,7 @@ export const deleteOneItemStock=(product)=>{
     return async (dispatch)=>{
         try {
             dispatch(deleteOneStock(product))
-            const response=await fetch(`https://shine-traders-back-end.vercel.app/products/admin/${id}`,{
+            const response=await fetch(`${baseURL}/products/admin/${id}`,{
                 method:"DELETE",
                 headers:{
                     "Content-Type":"application/json",
@@ -177,7 +177,7 @@ export const deleteWholeStock=()=>{
     return async (dispatch)=>{
         try {
            dispatch(deleteAllStock())
-            const response=await fetch(`https://shine-traders-back-end.vercel.app/products/admin`,{
+            const response=await fetch(`${baseURL}/products/admin`,{
                 method:"DELETE",
                 headers:{
                     "Content-Type":"application/json",
