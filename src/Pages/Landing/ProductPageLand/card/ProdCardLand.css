@@ -4,13 +4,10 @@
 }
 
 .prod-card-land-main{
-   
-   height: 60vh;
+   height: 50vh;
    width:100%;
- border-radius: 1rem;
-
- padding: 0.3rem;
-background-color: rgb(23, 79, 129);
+ border-radius: 0.2rem;
+background-color: rgb(255, 255, 255);
 }
 .prod-card-land {
     width:100%;
@@ -27,13 +24,13 @@ background-color: rgb(23, 79, 129);
   
   }
   .card-image-land{
-    width: 60%;
-    height: 40%;
+    width: 90%;
+    height: 45%;
     margin: auto;
-    border-radius: 0rem  0rem 2rem 2rem;
+    border-radius: 0.5rem  0.5rem 0.2rem 0.2rem;
     box-shadow: 0.2rem 0.2rem 1rem black;
     padding: 0.5rem;
-  background-color: rgba(186, 197, 227, 0.437);
+  background-color: rgb(233, 234, 237),
   }
  
 .prod-varient-land{
@@ -48,17 +45,29 @@ background-color: rgb(23, 79, 129);
   }
   .flex-container {
     display: flex !important;
-    margin-top: -1rem;
+    width: 100%;
   }
   .prod-card-name-land{
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: bold;
   }
   .prod-card-type2-land{
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+    border-radius: 0.2rem 1rem;
+    margin-top: 0.2rem;
+    color: goldenrod;
   }
+  
   .prod-price-land{
     font-size: 1rem;
     font-weight: bold;
+  }
+
+  .form-control{
+   
+    font-size: 1rem;
+    padding: 0.1rem 1.2rem;
   }
