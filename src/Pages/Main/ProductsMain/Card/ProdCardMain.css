@@ -6,20 +6,16 @@
 
 .prod-card-main-main{
    
-   height: 70vh;
-   width:100%;
- border-radius: 1rem;
- box-shadow: 0.5rem 0.5rem 0.5rem rgb(134, 132, 132);
- padding: 0.3rem;
-background-color: rgb(23, 79, 129);
-text-align: center;
+  height: 50vh;
+  width:100%;
+border-radius: 0.2rem;
+background-color: rgb(255, 255, 255);
 }
 .prod-card-main {
-    width:100%;
-    height: 100%;
-    border: 0.2rem solid rgb(34, 34, 31);
-   background-color: whitesmoke;
-   padding: 1rem;
+  width:100%;
+  height: 100%;
+  border: 0.2rem solid rgb(34, 34, 31);
+ background-color: whitesmoke;
   
   }
   .card-body>*{
@@ -29,13 +25,13 @@ text-align: center;
   
   }
   .card-image-main{
-    width: 80%;
-    height: 50%;
+    width: 90%;
+    height: 45%;
     margin: auto;
-    border-radius: 0rem  0rem 2rem 2rem;
+    border-radius: 0.5rem  0.5rem 0.2rem 0.2rem;
     box-shadow: 0.2rem 0.2rem 1rem black;
     padding: 0.5rem;
-  background-color: rgba(186, 197, 227, 0.437);
+  background-color: rgb(233, 234, 237),
   }
  
 .prod-varient-main{
@@ -57,8 +53,13 @@ text-align: center;
     font-weight: bold;
   }
   .prod-card-type2-main{
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+    border-radius: 0.2rem 1rem;
+    margin-top: 0.2rem;
+    color: goldenrod;
   }
   .prod-price-main{
     font-size: 1rem;
