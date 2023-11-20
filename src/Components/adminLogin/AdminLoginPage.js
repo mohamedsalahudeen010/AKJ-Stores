@@ -79,7 +79,7 @@ const AdminLogInPage = () => {
        
         <div>
           <h3 className="title-login-Admin">
-          Shine Traders Welcomes You
+          AKJ Stores Welcomes You
            
           </h3>
         </div>
@@ -91,7 +91,7 @@ const AdminLogInPage = () => {
         <h2 className="signIn-title-Admin">LogIn As Admin</h2>
           <form onSubmit={handleSubmit} className="form-signIn-Admin">
             
-            <div><span>AdminId : admin123@gmail.com</span> || 
+            <div className="credentials"><span>AdminId : admin123@gmail.com</span> || 
             
             <span>password : admin12345</span></div>
           <div className="input-div">
