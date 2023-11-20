@@ -6,15 +6,17 @@
     height:10vh;
     display: flex;
     justify-content: space-between;
-    color: rgb(25, 51, 9);
+    color: rgb(218, 223, 215);
     position:fixed;
-    top: 8vh;
+    top: 0.5vh;
     left: 0;
-    width: 96vw;
+    width: 99.5vw;
     z-index:2;
-    background-color: rgba(252, 252, 252, 0.934);
-    border-radius: 0.5rem;
+    background-color: rgba(24, 173, 66, 0.934);
+    border-radius: 0.1rem;
     border: 0.5px solid grey;
+    margin-left: 0.25vw;
+    
    
 }
 
