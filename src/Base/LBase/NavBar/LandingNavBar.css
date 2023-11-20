@@ -6,17 +6,16 @@
     height:10vh;
     display: flex;
     justify-content: space-between;
-    color: rgb(25, 51, 9);
+    color: rgb(218, 223, 215);
     position:fixed;
-    top: 8vh;
+    top: 0.5vh;
     left: 0;
-    width: 96vw;
+    width: 99.5vw;
     z-index:2;
-    background-color: rgba(252, 252, 252, 0.934);
-    margin-left:1vw;
-    border-radius: 0.5rem;
+    background-color: rgba(24, 173, 66, 0.934);
+    border-radius: 0.1rem;
     border: 0.5px solid grey;
-    
+    margin-left: 0.25vw;
 }
 
 .nav-left-land{
@@ -26,14 +25,44 @@
     gap: 1rem;
     cursor: pointer;
 }
-
 .nav-name-land{
     font-size: 1.5rem;
     font-weight: bold;
     padding-left: 1rem;
     cursor: pointer;
-    color: rgb(80, 181, 22);
+    color: rgb(25, 26, 25);
 }
+.nav-name-land:hover{
+    font-size: 1.7rem;
+    color: rgb(233, 238, 231);
+}
+.nav-left-land>ul{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    font-weight: bolder;
+    font-size:1.1rem;
+   margin-top: 1rem;
+  
+}
+.nav-left-land>ul>li{
+font-weight: bolder;
+float: left;
+}
+
+.nav-left-admin{
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: rgb(4, 46, 16); 
+    display: inline-block;
+}
+.nav-left-admin:hover{
+    cursor: pointer;
+    color:rgb(243, 250, 243);
+    font-size:1.2rem;
+    }
+
 
 .nav-right-land{
     display: flex;
@@ -62,17 +91,15 @@
    
 }
 .nav-right-land-list>ul>li{
-    color: rgb(5, 62, 5);
+    color:  rgb(4, 46, 16);
 }
 .nav-right-land-list>ul>li:hover{
 cursor: pointer;
-color: rgb(8, 235, 73);
+color:rgb(243, 250, 243);
 font-size:1.2rem;
+font-weight: bolder;
 }
-.nav-name-land:hover{
-    font-size: 1.7rem;
-    color: rgb(80, 181, 22);
-}
+
 .nav-btn{
     flex: 1;
     margin-right: 2rem;
