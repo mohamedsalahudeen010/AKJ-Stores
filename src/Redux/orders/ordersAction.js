@@ -154,8 +154,9 @@ export const fetchAllOrders=()=>{
     return async (dispatch)=>{
         dispatch(fetchOrderRequest())
         
+   
         try {
-            const response=await fetch(`${baseURL}/order/admin`,{
+            const response=await fetch(`${baseURL}/ordersAdmin`,{
                 method:"GET",
                 headers:{
                     "Content-Type":"application/json",
@@ -181,7 +182,7 @@ export const deleteOneItemOrder=(product)=>{
     return async (dispatch)=>{
         try {
             dispatch(deleteOneOrder(product))
-            const response=await fetch(`${baseURL}/orders/admin/${id}`,{
+            const response=await fetch(`${baseURL}/ordersAdmin/${id}`,{
                 method:"DELETE",
                 headers:{
                     "Content-Type":"application/json",
@@ -207,7 +208,7 @@ export const deleteWholeOrders=()=>{
     return async (dispatch)=>{
         try {
            dispatch(deleteAllOrders())
-            const response=await fetch(`${baseURL}/order`,{
+            const response=await fetch(`${baseURL}/ordersAdmin`,{
                 method:"DELETE",
                 headers:{
                     "Content-Type":"application/json",
