@@ -20,9 +20,9 @@ function OrdersPage() {
     },[]
     )
 
-    const orders=useSelector((orders)=>orders.order);
+    const orders=useSelector((orders)=>orders.orders.order);
   
-    console.log(orders)
+    console.log("jiohnoioinoinjnioonlj",orders)
   
     
 
@@ -33,7 +33,7 @@ function OrdersPage() {
       <div className="col-md-6 w-100">
         <h1 className="my-cart">Orders</h1>
 
-        {orders?orders.map((item,idx) => (
+        {orders&&orders.map((item,idx) => (
           <div className="flex-container m-2 cart" key={idx}>
             <div className="m-1 w-100" style={{ textAlign: "left" }}>
               <h4>Order {idx+1}</h4>
@@ -73,7 +73,7 @@ function OrdersPage() {
               </h6>
             </div>
           </div>
-        )):<h1>No orders Placed</h1>}
+        ))}
       </div>
      
     </div> 
