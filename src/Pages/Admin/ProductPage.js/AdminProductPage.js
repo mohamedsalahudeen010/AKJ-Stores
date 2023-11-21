@@ -32,7 +32,7 @@ function AdminProductPage() {
       <SideBar/>
     </div>
       <div className="row justify-content-center products-admin"
-      style={{paddingTop:"10rem"}}>
+      style={{paddingTop:"12rem"}}>
         {product &&
           product.map((prod) => (
             <div
