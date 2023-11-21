@@ -11,7 +11,7 @@ import "./ProdCardAdmin.css"
 // import { addToCart, fetchAddToCart } from "../../../../../Base/redux/Cart/cartAction";
 
 
-const ProductCardAdmin = ( product ) => {
+const ProductCardAdmin = ( {product} ) => {
   // const history = useHistory();
   
 
