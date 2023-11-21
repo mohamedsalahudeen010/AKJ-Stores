@@ -5,6 +5,7 @@ import { fetchProducts } from '../../../Redux/Products/productsAction'
 import ProductCardAdmin from './Card/ProductCardAdmin'
 import { fetchStock } from '../../../Redux/Stock/stockAction'
 import { fetchCart } from '../../../Redux/Cart/cartAction'
+import SideBar from '../../../Components/SideBar/SideBar'
 
 
 
@@ -24,11 +25,14 @@ function AdminProductPage() {
   
   },[])
   const product=useSelector((stock)=>stock.stock.stock)
+  console.log("WWWWWWWWWWWW",product)
   return (
     <AdminBase>
-         
+         <div className='row sideBar-land'>
+      <SideBar/>
+    </div>
       <div className="row justify-content-center products-admin"
-      style={{paddingTop:"8rem"}}>
+      style={{paddingTop:"10rem"}}>
         {product &&
           product.map((prod) => (
             <div
