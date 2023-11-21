@@ -20,7 +20,7 @@ function OrdersPage() {
     },[]
     )
 
-    const orders=useSelector((orders)=>orders.order.order);
+    const orders=useSelector((orders)=>orders.order);
   
     console.log(orders)
   
@@ -73,7 +73,7 @@ function OrdersPage() {
               </h6>
             </div>
           </div>
-        )):<h1>Do orders Placed</h1>}
+        )):<h1>No orders Placed</h1>}
       </div>
      
     </div> 
