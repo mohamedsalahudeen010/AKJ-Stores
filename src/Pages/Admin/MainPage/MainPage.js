@@ -14,11 +14,11 @@ function AdminHomePage() {
 
   const [userEmail,setUserEmail]=useState(localStorage.getItem("email"))
 
-  setUserEmail(localStorage.getItem("email"));
+  
 
   useEffect(()=>{
     dispatch(fetchCart(userEmail))
-  },[userEmail])
+  },[])
  
   return (
     
