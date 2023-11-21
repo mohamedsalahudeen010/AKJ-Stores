@@ -12,7 +12,7 @@ import "./StockCardAdmin.css"
 import { deleteOneItemStock } from "../../../../Redux/Stock/stockAction";
 
 
-const StockCardAdmin = ( product ) => {
+const StockCardAdmin = ( {product} ) => {
   const navigate = useNavigate();
   
 
