@@ -26,6 +26,7 @@ function StockPage() {
   
   },[])
   const product=useSelector((stock)=>stock.stock.stock)
+
   return (
    <AdminBase>
     <div className='stock-page'>
