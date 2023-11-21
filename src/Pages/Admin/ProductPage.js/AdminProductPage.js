@@ -36,7 +36,7 @@ function AdminProductPage() {
         {product &&
           product.map((prod) => (
             <div
-              className="col-md-3 m-1 card-admin"
+              className="col-lg-2 col-md-4 col-sm-6 col-xs-6 m-1 card-admin"
               key={prod._id}
               
             >
