@@ -52,13 +52,17 @@ margin: 0.5rem;
     margin-top: -1rem;
   }
   .stock-card-name-admin{
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: bold;
   }
   .stock-card-type2-admin{
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: bold;
     margin-top: -1rem;
+    border-radius: 0.1rem 1rem;
+    background-color:rgb(23, 79, 129) ;
+    padding: 0.2rem 0.54rem;
+    color: aliceblue;
   }
   .stock-price-admin{
     font-size: 1rem;
