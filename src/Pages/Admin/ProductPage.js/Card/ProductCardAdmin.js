@@ -1,22 +1,19 @@
-
+import React from "react";
 import { Modal } from "react-bootstrap";
-
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-// import { useHistory } from "react-router-dom";
-// import { useDispatch } from "react-redux";
-// import { addToCart } from "../../Action/cartActions";
 import "./ProdCardAdmin.css"
-// import { addToCart, fetchAddToCart } from "../../../../../Base/redux/Cart/cartAction";
+import { useDispatch } from "react-redux";
+
 
 
 const ProductCardAdmin = ( {product} ) => {
-  // const history = useHistory();
+  
   
 
 
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   
 
@@ -51,7 +48,7 @@ const ProductCardAdmin = ( {product} ) => {
              <div style={{fontWeight:"bold"}}>Quantity</div> 
               {product.quantity}
             </div>
-            <div className="w-100 ">
+            <div className="w-100">
             <div style={{fontWeight:"bold"}} >Stock</div> 
               {product.stock} Nos
             </div>
