@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useDispatch } from "react-redux";
-import { fetchProductsWithQuery } from "../../Redux/Products/productsAction";
+import { fetchProducts, fetchProductsWithQuery } from "../../Redux/Products/productsAction";
 
 
 function SideBar() {
@@ -13,6 +13,12 @@ function SideBar() {
     const dispatch=useDispatch()
   return (
     <div className="sideBar">
+       <div className="sidebar-title">
+        <img src="" alt="products"
+        onClick={()=>{dispatch(fetchProducts())}}/>
+       <h6> Products</h6>
+        </div>
+
        
        <div className="sidebar-title">
         <img src="https://rukminim1.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100" alt="mobile"
@@ -162,22 +168,38 @@ function SideBar() {
               <NavDropdown.Item onClick={()=>{dispatch(fetchProductsWithQuery("clock"))}}>Clock</NavDropdown.Item>
             </NavDropdown>
        </div>
-
-       <div className="sidebar-title">
-       <img src="https://rukminim1.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="grocery"
-       onClick={()=>{dispatch(fetchProductsWithQuery("grocery"))}}/>
+<div className="sidebar-title">
+       <img src="https://rukminim1.flixcart.com/flap/80/80/image/dff3f7adcf3a90c6.png?q=100" alt="toys"
+       onClick={()=>{dispatch(fetchProductsWithQuery("toys"))}}/>
             <NavDropdown
              
-              title="Grocery"
+              title="Toys"
               menuVariant="light"
               variant="dark"
               id="dropdown-custom-components"
             >
-              
+              <NavDropdown.Item onClick={()=>{dispatch(fetchProductsWithQuery("3 seater sofa"))}}>3 Seater Sofa</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>{dispatch(fetchProductsWithQuery("5 seater sofa"))}}>5 Seater Sofa</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>{dispatch(fetchProductsWithQuery("corner sofa"))}}>Corner Sofa</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>{dispatch(fetchProductsWithQuery("bed"))}}>Bed</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>{dispatch(fetchProductsWithQuery("mattress"))}}>Mattress</NavDropdown.Item>
+              <NavDropdown.Item  onClick={()=>{dispatch(fetchProductsWithQuery("dining table"))}}>Dining Table</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>{dispatch(fetchProductsWithQuery("wooden cot"))}}>Wooden Cot</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>{dispatch(fetchProductsWithQuery("bedsheets"))}}>BedSheets</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>{dispatch(fetchProductsWithQuery("pillows"))}}>Pillows</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>{dispatch(fetchProductsWithQuery("coffee table"))}}>Coffee Table</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>{dispatch(fetchProductsWithQuery("blanket"))}}>Blanket</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>{dispatch(fetchProductsWithQuery("clock"))}}>Clock</NavDropdown.Item>
             </NavDropdown>
+       </div>
+       <div className="sidebar-title">
+       <img src="https://rukminim1.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="grocery"
+       onClick={()=>{dispatch(fetchProductsWithQuery("grocery"))}}/>
+           <h6> Grocery</h6>
        </div>
     </div>
   )
 }
 
 export default SideBar
+
