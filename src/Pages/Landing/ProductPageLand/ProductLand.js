@@ -9,6 +9,7 @@ import { fetchProducts } from '../../../Redux/Products/productsAction'
 import SideBar from '../../../Components/SideBar/SideBar'
 
 import SearchBar from '../../../Components/searchBar/SearchBar'
+import { Spinner } from 'react-bootstrap'
 
 
 
@@ -22,8 +23,8 @@ function ProductLand() {
    },[])
    
   const product=useSelector((prod)=>prod.products.products)
-
-
+ const loading=useSelector((prod)=>prod.products.loading)
+console.log("hiuwfhiuahioww",loading)
   return (
 <LandingBase>
 
@@ -38,11 +39,11 @@ function ProductLand() {
     <SearchBar />
     </div>
     
-    
-      <div className="row justify-content-center b ">
+    {  loading? 
+      <div className="row justify-content-center b "> <Spinner animation="border" variant="dark" size='xl' /></div>
      
- 
-            
+      :
+     <div className="row justify-content-center b ">
         {product &&
           product.map((prod) => (
             <div className="col-xl-2 col-md-3 col-sm-4 col-xs-5 card-land" key={prod._id}>
@@ -50,8 +51,10 @@ function ProductLand() {
               
               </div>
           ))}
+          
+        
           </div>
-     
+     }  
       
 
       </div>
