@@ -18,10 +18,12 @@ import { useParams } from "react-router-dom";
 const studentValidationSchema=yup.object({
   name:yup.string().required("please fill the name"),
   prize:yup.string().required("please fill the Prize of the Product"),
-  quantity: yup.string().required("please fill the Quantity of the Product"),
+  varient: yup.string().required("please fill the varient of the Product"),
   image:yup.string().required("please fill the image of the Product"),
+  productGroup:yup.string().required("please fill the Product Group"),
+  productSubGroup:yup.string().required("please fill the Product Sub-Group"),
   type:yup.string().required("please fill the type of the Product"),
-  type2:yup.string().required("please fill the type2 of the Product"),
+  brand:yup.string().required("please fill the brand of the Product"),
   stock:yup.string().required("please fill the Number of Stock to be Added"),
   features:yup.string(),
   description:yup.string()
@@ -45,10 +47,12 @@ function UpdateProducts() {
     _id:prod[0]._id,
       name:prod[0].name,
       prize:prod[0].prize,
-      quantity:prod[0].quantity,
+      varient:prod[0].varient,
       image:prod[0].image,
+      productGroup:prod[0].productGroup,
+      productSubGroup:prod[0].productSubGroup,
       type:prod[0].type,
-      type2:prod[0].type2,
+      brand:prod[0].brand,
       stock:prod[0].stock,
       features:prod[0].features,
       description:prod[0].description,
@@ -107,17 +111,17 @@ const navigate=useNavigate();
      
 
     <TextField  
-    label={touched.quantity && errors.quantity?
-    <p style={{color:"red"}}>{errors.quantity}</p>:"Enter The quantity of the product"}
+    label={touched.varient && errors.varient?
+    <p style={{color:"red"}}>{errors.varient}</p>:"Enter The varient of the product"}
     id="filled" 
     variant="filled"
     style={{marginLeft:"1rem",
     marginTop:"1rem",
     width: '40ch'}}
      onChange={handleChange}
-     value={values.quantity}
+     value={values.varient}
      onBlur={handleBlur}
-     name= "quantity"
+     name= "varient"
       />
       
 
@@ -134,6 +138,31 @@ const navigate=useNavigate();
      onBlur={handleBlur}
      name= "image" />
      
+     <TextField  
+     label={touched.productGroup && errors.productGroup?<p style={{color:"red"}}>{errors.productGroup}</p>:
+     "Enter The product Group" }
+    id="filled" 
+    variant="filled"
+    style={{marginLeft:"1rem",
+    marginTop:"1rem",
+    width: '40ch'}}
+    onChange={handleChange}
+     value={values.productGroup}
+     onBlur={handleBlur}
+     name= "type" />
+
+     <TextField  
+     label={touched.productSubGroup && errors.productSubGroup?<p style={{color:"red"}}>{errors.productSubGroup}</p>:
+     "Enter The product Sub-Group" }
+    id="filled" 
+    variant="filled"
+    style={{marginLeft:"1rem",
+    marginTop:"1rem",
+    width: '40ch'}}
+    onChange={handleChange}
+     value={values.productSubGroup}
+     onBlur={handleBlur}
+     name= "type" />
 
      <TextField  
      label={touched.type && errors.type?<p style={{color:"red"}}>{errors.type}</p>:
@@ -150,17 +179,17 @@ const navigate=useNavigate();
      
 
      <TextField  
-     label= {touched.type2 && errors.type2?<p style={{color:"red"}}>{errors.type2}</p>:
-     "Enter The type2 of the product" }
+     label= {touched.brand && errors.brand?<p style={{color:"red"}}>{errors.brand}</p>:
+     "Enter The brand of the product" }
     id="filled" 
     variant="filled"
     style={{marginLeft:"1rem",
     marginTop:"1rem",
     width: '40ch'}}
     onChange={handleChange}
-     value={values.type2}
+     value={values.brand}
      onBlur={handleBlur}
-     name= "type2" />
+     name= "brand" />
     
 
      <TextField  
