@@ -8,7 +8,6 @@ import { fetchProducts } from '../../../Redux/Products/productsAction'
 
 import ProductCardMain from './Card/prodCardMain'
 import SideBar from '../../../Components/SideBar/SideBar'
-import ProductCardLand from '../../Landing/ProductPageLand/card/ProdCardLand'
 import SearchBar from '../../../Components/searchBar/SearchBar'
 
 function ProductsPageMain() {
@@ -39,7 +38,7 @@ function ProductsPageMain() {
         {product &&
           product.map((prod) => (
             <div className="col-xl-2 col-md-3 col-sm-4 col-xs-5 card-land" key={prod._id}>
-              <ProductCardLand product={prod} />
+              <ProductCardMain product={prod} />
               
               </div>
           ))}
