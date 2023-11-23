@@ -57,25 +57,13 @@ const ProductCardLand = ( {product} ) => {
           {/* ======================================================*/}
           <div className="flex-container">
           <div className="w-100  prod-card-type2-land">
-            {product.type2}
+            {product.varient}
             </div>
           </div>
           <div className="flex-container">
-            <div className="w-100 prod-varient-land m-1">
-              Varients
-              <select
-                className="form-control"
-                value={varient}
-                onChange={(e) => {
-                  setVarient(e.target.value);
-                }}
-              >
-                {[1,4,10,20].map((varient) => (
-                  <option key={varient} value={varient}>
-                    {varient} litre
-                  </option>
-                ))}
-              </select>
+          <div className="w-100 prod-varient-admin">
+            
+              {product.brand}
             </div>
             <div className="w-100 prod-Quantity-land m-1">
               Quantity
