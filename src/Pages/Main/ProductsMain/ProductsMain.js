@@ -9,6 +9,7 @@ import { fetchProducts } from '../../../Redux/Products/productsAction'
 import ProductCardMain from './Card/prodCardMain'
 import SideBar from '../../../Components/SideBar/SideBar'
 import ProductCardLand from '../../Landing/ProductPageLand/card/ProdCardLand'
+import SearchBar from '../../../Components/searchBar/SearchBar'
 
 function ProductsPageMain() {
   const dispatch=useDispatch()
@@ -30,7 +31,9 @@ function ProductsPageMain() {
     <div className='row sideBar-land'>
       <SideBar/>
     </div>
-    
+    <div className='sideBarSearchBar'>
+    <SearchBar />
+    </div>
       <div className="row justify-content-center b ">
             
         {product &&
