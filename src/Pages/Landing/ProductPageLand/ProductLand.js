@@ -7,6 +7,8 @@ import ProductCardLand from './card/ProdCardLand'
 import LandingBase from '../../../Base/LBase/LandingBase'
 import { fetchProducts } from '../../../Redux/Products/productsAction'
 import SideBar from '../../../Components/SideBar/SideBar'
+import AllProductsBtn from '../../../Components/AllProductsBtn/AllProductsBtn'
+import SearchBar from '../../../Components/searchBar/SearchBar'
 
 
 
@@ -20,7 +22,7 @@ function ProductLand() {
    },[])
    
   const product=useSelector((prod)=>prod.products.products)
-  console.log( "product Land : ",  product)
+
 
   return (
 <LandingBase>
@@ -29,7 +31,13 @@ function ProductLand() {
     
     <div className='row sideBar-land'>
       <SideBar/>
+      
     </div>
+   
+    <div className='sideBarSearchBar'>
+    <SearchBar />
+    </div>
+    
     
       <div className="row justify-content-center b ">
      
