@@ -9,6 +9,7 @@ import { fetchProducts } from '../../../Redux/Products/productsAction'
 import ProductCardMain from './Card/prodCardMain'
 import SideBar from '../../../Components/SideBar/SideBar'
 import SearchBar from '../../../Components/searchBar/SearchBar'
+import { Spinner } from 'react-bootstrap'
 
 function ProductsPageMain() {
   const dispatch=useDispatch()
@@ -20,7 +21,7 @@ function ProductsPageMain() {
   
    
     const product=useSelector((prod)=>prod.products.products)
-    console.log(product)
+    const loading=useSelector((prod)=>prod.products.loading)
     
   return (
     <MainBase>
@@ -33,6 +34,10 @@ function ProductsPageMain() {
     <div className='sideBarSearchBar'>
     <SearchBar />
     </div>
+    {  loading? 
+      <div className="row justify-content-center b "> <Spinner animation="border" variant="dark" size='xl' /></div>
+     
+      :
       <div className="row justify-content-center b ">
             
         {product &&
@@ -43,12 +48,13 @@ function ProductsPageMain() {
               </div>
           ))}
           </div>
-     
+}
       
 
       </div>
       
       
+          
 
      
       </MainBase>
