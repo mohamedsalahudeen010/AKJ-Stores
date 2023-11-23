@@ -24,7 +24,7 @@ function ProductLand() {
    
   const product=useSelector((prod)=>prod.products.products)
  const loading=useSelector((prod)=>prod.products.loading)
-console.log("hiuwfhiuahioww",loading)
+
   return (
 <LandingBase>
 
