@@ -37,5 +37,21 @@ export const fetchProducts=()=>{
         }
     }
 }
-
+export const fetchProductsWithQuery=(query)=>{
+    return async (dispatch)=>{
+        dispatch(fetchProductsRequest())
+       
+        try {
+            const response=await fetch(`${baseURL}/products?product=${query}`,{
+                method:"GET"
+            })
+            const data=await response.json()
+            console.log(data)
+            dispatch(fetchProductsSuccess(data))
+        } catch (error) {
+            console.log(error)
+            dispatch(fetchProductsFailure(error))
+        }
+    }
+}
 
