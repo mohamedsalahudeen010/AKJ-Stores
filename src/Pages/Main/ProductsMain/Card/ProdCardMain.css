@@ -26,7 +26,7 @@ background-color: rgb(255, 255, 255);
   }
   .card-image-main{
     width: 90%;
-    height: 45%;
+    height: 40%;
     margin: auto;
     border-radius: 0.5rem  0.5rem 0.2rem 0.2rem;
     box-shadow: 0.2rem 0.2rem 1rem black;
@@ -38,7 +38,7 @@ background-color: rgb(255, 255, 255);
   margin-top: -0.2rem;
 }
   .prod-main-btn {
-    padding: 0.2rem 0.5rem;
+    padding: 0.1rem 0.5rem;
     border-radius: 0.3rem;
     background-color: rgb(210, 50, 50);
     color: whitesmoke;
@@ -49,14 +49,14 @@ background-color: rgb(255, 255, 255);
     margin-top: -1rem;
   }
   .prod-card-name-main{
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     font-weight: bold;
   }
   .prod-card-type2-main{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: bold;
     background-color: rgb(12, 12, 12);
-    width: 100%;
+    width: 11rem;
     border-radius: 0.2rem 1rem;
     margin-top: 0.2rem;
     color: goldenrod;
@@ -64,4 +64,8 @@ background-color: rgb(255, 255, 255);
   .prod-price-main{
     font-size: 1rem;
     font-weight: bold;
+  }
+  .form-control>select{
+    font-size: 1rem;
+    padding: 0.1rem;
   }
