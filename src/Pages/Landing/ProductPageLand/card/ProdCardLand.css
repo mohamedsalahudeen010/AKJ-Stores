@@ -24,8 +24,8 @@ background-color: rgb(255, 255, 255);
   
   }
   .card-image-land{
-    width: 90%;
-    height: 45%;
+    width: 88%;
+    height: 38%;
     margin: auto;
     border-radius: 0.5rem  0.5rem 0.2rem 0.2rem;
     box-shadow: 0.2rem 0.2rem 1rem black;
@@ -48,11 +48,11 @@ background-color: rgb(255, 255, 255);
     width: 100%;
   }
   .prod-card-name-land{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: bold;
   }
   .prod-card-type2-land{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: bold;
     background-color: rgb(12, 12, 12);
     width: 100%;
