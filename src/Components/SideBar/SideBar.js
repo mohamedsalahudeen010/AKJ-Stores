@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useDispatch } from "react-redux";
 import { fetchProducts, fetchProductsWithQuery } from "../../Redux/Products/productsAction";
+import productImage from "./Products.png"
 
 
 function SideBar() {
@@ -14,7 +15,8 @@ function SideBar() {
   return (
     <div className="sideBar">
        <div className="sidebar-title">
-        <img src="" alt="products"
+        <img  src={productImage} alt="products"
+        style={{width:"4rem",borderRadius:"1rem",margin:"0.6rem"}}
         onClick={()=>{dispatch(fetchProducts())}}/>
        <h6> Products</h6>
         </div>
