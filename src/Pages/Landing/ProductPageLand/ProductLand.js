@@ -7,7 +7,7 @@ import ProductCardLand from './card/ProdCardLand'
 import LandingBase from '../../../Base/LBase/LandingBase'
 import { fetchProducts } from '../../../Redux/Products/productsAction'
 import SideBar from '../../../Components/SideBar/SideBar'
-import AllProductsBtn from '../../../Components/AllProductsBtn/AllProductsBtn'
+
 import SearchBar from '../../../Components/searchBar/SearchBar'
 
 
