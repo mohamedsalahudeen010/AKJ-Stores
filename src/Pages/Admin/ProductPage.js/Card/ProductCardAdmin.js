@@ -40,13 +40,13 @@ const ProductCardAdmin = ( {product} ) => {
           {/* ======================================================*/}
           <div className="flex-container card-body">
           <div className="w-100 prod-card-type2-admin">
-            {product.type2}
+            {product.varient}
             </div>
           </div>
           <div className="flex-container">
             <div className="w-100 prod-varient-admin">
-             <div style={{fontWeight:"bold"}}>Quantity</div> 
-              {product.quantity}
+             <div style={{fontWeight:"bold"}}>Brand</div> 
+              {product.brand}
             </div>
             <div className="w-100">
             <div style={{fontWeight:"bold"}} >Stock</div> 
